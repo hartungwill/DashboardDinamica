@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DB", "..\DB1\DB.sqlproj", "{99137DD1-859D-4BE1-AAD4-3ECE0687086E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "..\Dashboard\Dashboard.csproj", "{9F7B709E-C3B2-4F86-802F-AA361EF74434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicDAL", "..\DynamicDAL\DynamicDAL.csproj", "{92088DD0-529A-4A6C-8E24-99A061726171}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "..\DTO\DTO.csproj", "{F3B700C7-5C75-4446-BD20-3AC0B27E4336}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CDN", "CDN", "{6B0CFE65-DFFC-40C3-839C-90BAEBDE9DCD}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CDN", "..\CDN\", "{DBEBC6C1-67ED-4B4C-8ABB-1DBDEDB3FA48}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53001"
+		Debug.AspNetCompiler.PhysicalPath = "..\CDN\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53001\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53001"
+		Release.AspNetCompiler.PhysicalPath = "..\CDN\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53001\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53001"
+		SlnRelativePath = "..\CDN\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base de Dados", "Base de Dados", "{2F996D71-8436-4C70-81E0-126747725A30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99137DD1-859D-4BE1-AAD4-3ECE0687086E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99137DD1-859D-4BE1-AAD4-3ECE0687086E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99137DD1-859D-4BE1-AAD4-3ECE0687086E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{99137DD1-859D-4BE1-AAD4-3ECE0687086E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99137DD1-859D-4BE1-AAD4-3ECE0687086E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99137DD1-859D-4BE1-AAD4-3ECE0687086E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9F7B709E-C3B2-4F86-802F-AA361EF74434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7B709E-C3B2-4F86-802F-AA361EF74434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7B709E-C3B2-4F86-802F-AA361EF74434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7B709E-C3B2-4F86-802F-AA361EF74434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92088DD0-529A-4A6C-8E24-99A061726171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92088DD0-529A-4A6C-8E24-99A061726171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92088DD0-529A-4A6C-8E24-99A061726171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92088DD0-529A-4A6C-8E24-99A061726171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3B700C7-5C75-4446-BD20-3AC0B27E4336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B700C7-5C75-4446-BD20-3AC0B27E4336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B700C7-5C75-4446-BD20-3AC0B27E4336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B700C7-5C75-4446-BD20-3AC0B27E4336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBEBC6C1-67ED-4B4C-8ABB-1DBDEDB3FA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBEBC6C1-67ED-4B4C-8ABB-1DBDEDB3FA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBEBC6C1-67ED-4B4C-8ABB-1DBDEDB3FA48}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBEBC6C1-67ED-4B4C-8ABB-1DBDEDB3FA48}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99137DD1-859D-4BE1-AAD4-3ECE0687086E} = {2F996D71-8436-4C70-81E0-126747725A30}
+		{DBEBC6C1-67ED-4B4C-8ABB-1DBDEDB3FA48} = {6B0CFE65-DFFC-40C3-839C-90BAEBDE9DCD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44410E59-A909-4611-B83E-B0CB128B32BC}
+	EndGlobalSection
+EndGlobal

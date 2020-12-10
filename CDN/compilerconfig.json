@@ -1,0 +1,26 @@
+﻿[
+  {
+    "outputFile": "Comum/CSS/Utils/FloatingLabel/FloatingLabel.css",
+    "inputFile": "Comum/CSS/Utils/FloatingLabel/FloatingLabel.less"
+  },
+  {
+    "outputFile": "Dashboard/CSS/Index.css",
+    "inputFile": "Dashboard/CSS/Index.less"
+  },
+  {
+    "outputFile": "Comum/CSS/Utils/Utility/Utility.css",
+    "inputFile": "Comum/CSS/Utils/Utility/Utility.less"
+  },
+  {
+    "outputFile": "Dashboard/CSS/Custom/Index.css",
+    "inputFile": "Dashboard/CSS/Custom/Index.less"
+  },
+  {
+    "outputFile": "Dashboard/JS/Dash_Util.es5.js",
+    "inputFile": "Dashboard/JS/Dash_Util.js"
+  },
+  {
+    "outputFile": "Dashboard/CSS/2.0/Index.css",
+    "inputFile": "Dashboard/CSS/2.0/Index.less"
+  }
+]

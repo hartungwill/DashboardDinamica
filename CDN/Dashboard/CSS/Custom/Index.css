@@ -1,0 +1,21 @@
+﻿body {
+  background-color: #3f3490;
+}
+#Dashboard .linha .item.label {
+  color: #ffffff;
+}
+#Dashboard .linha .item .box-floating .label-floating {
+  color: #000000;
+}
+#Dashboard .linha .item.chart {
+  background-color: #ffffff;
+}
+#Dashboard .linha .item.table {
+  background-color: #ffffff;
+}
+#Dashboard .linha .item.map-box {
+  background-color: #ffffff;
+}
+#Dashboard .linha .item.badge-box {
+  background-color: #ffffff;
+}

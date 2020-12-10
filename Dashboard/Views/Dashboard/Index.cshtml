@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard Dinâmica";
+}
+
+@* SHARED *@
+<script src="http://localhost:53001/Plugins/jquery/jquery-3.1.1.min.js"></script>
+
+@* SHARED *@
+
+<div id="Dashboard">@* PREENCHIDO VIA JS *@</div>
+
+<link href="http://localhost:53001/Plugins/chartjs/css/chartjs.css" rel="stylesheet" />
+<link href="http://localhost:53001/Comum/CSS/Utils/Utility/Utility.css" rel="stylesheet" />
+
+@* Comentado Erro Cross Origin *@
+@*<link href="http://localhost:53001/Plugins/fontawesome-free-5/css/all.min.css" rel="stylesheet" />*@
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet" />
+<link href="http://localhost:53001/Dashboard/CSS/Index.min.css" rel="stylesheet" />
+<link href="http://localhost:53001/Comum/CSS/Utils/FloatingLabel/FloatingLabel.min.css" rel="stylesheet" />
+<link href="http://localhost:53001/Dashboard/CSS/Custom/Index.min.css" rel="stylesheet" />
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf901OFONrougc8KIM5Ams7CnEiuPd2lY"></script>
+<script src="http://localhost:53001/Plugins/chartjs/js/Chart.bundle.min.js"></script>
+<script src="http://localhost:53001/Plugins/chartjs/js/chartjs-plugin-datalabels.min.js"></script>
+
+@*<script src="http://localhost:53001/Dashboard/JS/Index.js"></script>*@
+
+<script src="http://localhost:53001/Dashboard/JS/3.0/Utils_Table.js"></script>
+<script src="http://localhost:53001/Dashboard/JS/3.0/Graficos.js"></script>
+<script src="http://localhost:53001/Dashboard/JS/3.0/Dash_Util.js"></script>
+<script src="http://localhost:53001/Dashboard/JS/3.0/Loaders_v2.js"></script>
+
+<script type="text/javascript">
+    // Variáveis
+    var Dashboard_Actions = {
+        ListaElementosAsync: '@Url.Action("ListaElementosAsync", "Dashboard")',
+        ExecuteDynamicAsync: '@Url.Action("ExecuteDynamicAsync", "Dashboard")',
+        GetRelatorioAsync: '@Url.Action("GetRelatorioAsync", "Dashboard")'
+    };
+
+    var ID_Dashboard = @ViewBag.ID_Dashboard;
+
+    const dataListaElementosAsync = {
+        'ID_Dashboard': ID_Dashboard
+    };
+
+    $( document ).ready(function() {
+        Graficos.inicializar();
+    });
+</script>

@@ -1,0 +1,18 @@
+﻿@media-xl: ~"(min-width: 1200px)";
+@media-lg: ~"(min-width: 992px) and (max-width: 1199px)";
+@media-md: ~"(min-width: 768px) and (max-width: 991px)";
+@media-sm: ~"(min-width: 576px) and (max-width: 767px)";
+@media-xs: ~"(max-width: 575px)";
+@media-desktop: ~"(min-width: 768px)";
+@media-desktop-extended: ~"(min-width: 576px)";
+@media-mobile: ~"(max-width: 767px)";
+
+.border-radius(@tamanho: 15px) {
+    -webkit-border-radius: @tamanho;
+    -moz-border-radius: @tamanho;
+    border-radius: @tamanho;
+}
+
+.box-shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}

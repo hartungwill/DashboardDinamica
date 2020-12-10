@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{99137dd1-859d-4be1-aad4-3ece0687086e}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DB1</RootNamespace>
+    <AssemblyName>DB1</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="SQL" />
+    <Folder Include="SQL\Estrutura" />
+    <Folder Include="SQL\Procedures" />
+    <Folder Include="SQL\Rascunho" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="SQL\Estrutura\Estrutura.sql" />
+    <Build Include="SQL\Estrutura\Estrutura_drop.sql" />
+    <Build Include="SQL\Estrutura\Inserts.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Elemento_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Filtros_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Filtros_Modelo_Nivel1.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Filtros_Modelo_Nivel2.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Filtros_Modelo_Nivel3.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Filtros_Star_Franquia.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Filtros_Star_QTR.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Badge_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Barra_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_BarraHorizontal_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_BarraHorizontal_Modelo_old.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Combo_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Donut_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Linha_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Linha_Modelo_old.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Pizza_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Stacked_Group_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Stacked_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Grafico_Waterfall_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Mapa_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Relatorio_Cloud_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Table_Modelo.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Table_Modelo_Paginado.sql" />
+    <Build Include="SQL\Procedures\proc_Dash_Table_Modelo2.sql" />
+    <Build Include="SQL\Rascunho\QUERYS.sql" />
+  </ItemGroup>
+</Project>
